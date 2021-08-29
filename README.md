@@ -1,6 +1,13 @@
 # DNPC: A Dynamic Node-Level Power Capping Library for HPC Applications
 
 ## Overview
+DNPC is a user-level dynamic power capping library for dynamic power and energy management. 
+It works by combining the energy monitoring and hardware counter monitoring of PoLiMEr and PAPI, respectively.
+It employs one of the built-in or user-supplied dynamic power capping methods during run-time to set power-caps on the application.
+DNPC works with C and C++ applications through simply including the library and calling the appropriate DNPC functions.
+It also exposes a set of Fortran wrapper functions that allow DNPC to work with Fortran applications as well.
+
+While DNPC is a user-level library, PoLiMEr internally uses RAPL for power capping, so the user should contact their system administrator for privileges to read/write certain MSRs as outlined in PoLiMEr's documentation.
 
 ## Using DNPC
 ### Dependencies
@@ -81,8 +88,10 @@ With `<DNPC_PATH>` set to the location of the DNPC repository on your system.
 ## Building DNPC
 Clone the repository. 
 Afterwards, edit the Makefile to include the appropriate include and library paths to PAPI and PoLiMEr on your system. 
+Make sure that PoLiMEr was compiled with the `TIMER_OFF` flag in order to not conflict with DNPC's timer.
 Once those are complete, run the following commands from the directory's root.
 ```
+mkdir bin; mkdir lib
 make
 ```
 
