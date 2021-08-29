@@ -13,7 +13,9 @@ While DNPC is a user-level library, PoLiMEr internally uses RAPL for power cappi
 ### Dependencies
 - PAPI
 	- Terpstra, D., Jagode, H., You, H., Dongarra, J. "Collecting Performance Data with PAPI-C", Tools for High Performance Computing 2009, Springer Berlin / Heidelberg, 3rd Parallel Tools Workshop, Dresden, Germany, pp. 157-173, 2010. 
-- PoLiMEr
+- PoLiMEr (Modified Version Required)
+	- Modified Repository: https://github.com/SPEAR-IIT/PoLiMEr-dnpc
+	- Original Repository: https://xgitlab.cels.anl.gov/open-source/PoLiMEr
 	- Ivana Marincic, Venkatram Vishwanath, and Henry Hoffmann. 2017. PoLiMEr: An Energy Monitoring and Power Limiting Interface for HPC Applications. In Proceedings of the 5th International Workshop on Energy Efficient Supercomputing (E2SC'17). Association for Computing Machinery, New York, NY, USA, Article 7, 1–8. DOI:https://doi.org/10.1145/3149412.3149419
 
 ### Adding DNPC To Applications 
