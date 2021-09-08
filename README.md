@@ -101,4 +101,4 @@ make
 Note: If you use DNPC in your work, please cite the following work:
 
 Sahil Sharma, Zhiling Lan, Xingfu Wu, and Valerie Taylor, “A Dynamic Power Capping Library for HPC Applications”, IEEE Cluster 2021 (research poster)
-
+[Cluster21Poster.pdf](https://github.com/SPEAR-IIT/DNPC/files/7131672/Cluster21Poster.pdf)]
